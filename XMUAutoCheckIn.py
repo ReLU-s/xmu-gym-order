@@ -84,6 +84,7 @@ def checkin(cfg: Config, use_vpn=True) -> None:
     driver.get(checkin_url)
 
     # 开始工作
+    '''
     job = click_mytable()
     job.add_child(
         dropdown_province("福建省"),
@@ -102,7 +103,7 @@ def checkin(cfg: Config, use_vpn=True) -> None:
         click_save()
     )
     job.do()
-
+    '''
     try:
         if not debug:
             driver.switch_to.alert.accept()
