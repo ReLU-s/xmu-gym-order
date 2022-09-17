@@ -155,7 +155,7 @@ def main():
 
 
 if __name__ == '__main__':
-
+    '''
     if not debug and time.localtime().tm_hour < 11:
         time_start: int = unix_timestamp()
         time_end: int = time_start + random_second()
@@ -163,6 +163,7 @@ if __name__ == '__main__':
         while True:
             if unix_timestamp() > time_end:
                 break
+    '''
     try:
         main()
     finally:
